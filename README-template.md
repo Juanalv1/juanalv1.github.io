@@ -11,8 +11,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/product-preview-card-component-yZxGHvb5p8
+- Live Site URL: https://juanalv1.github.io/
 
 ## My process
 
@@ -26,7 +26,5 @@ Users should be able to:
 
 
 ## Author
+- Frontend Mentor - https://www.frontendmentor.io/profile/Juanalv1
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
