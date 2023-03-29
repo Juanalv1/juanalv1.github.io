@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+:root{
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --fw-p: 500;
+  --fw-t: 700;
+  --fw-button: 700;
+  --fs-title: 2.8rem;
+  --fs-p: 1.4rem;
+  --fm-title:'Fraunces', serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Cream);
+  font-family: 'Montserrat', sans-serif;
+}
+main{
+  width: 90%;
+  height: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  background-color: var(--White);
+  border-radius: 8px;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.image--section{
+  display: flex;
+  justify-content: center;
+}
+.desktop-image{
+  display: none;
+}
+.details--section{
+  margin: 0 10px 8px 20px;
+  padding: 8px;
+}
+.details--section p{
+  font-size: var(--fs-p);
+  font-weight: var(--fw-p);
+  color: var(--Dark-grayish-blue);
+  margin-top: 12px;
+}
+.details--section p:nth-child(3){
+  line-height: 2.4rem;
+}
+.details--section h1{
+  font-size: var(--fs-title);
+  font-weight: var(--fw-t);
+  font-family: var(--fm-title);
+  margin-top: 4px;
+}
+.price--section{
+  margin: 0 20px 12px 20px;
+}
+.card--price{
+}
+.card--price span:nth-child(1){
+  font-size: var(--fs-title);
+  font-weight: var(--fw-t);
+  font-family: var(--fm-title);
+  color: var(--Dark-cyan);
+}
+.card--price span:nth-child(2){
+  font-size: var(--fs-p);
+  font-weight: var(--fw-p);
+  color: var(--Dark-grayish-blue);
+  vertical-align:super;
+  margin-left: 12px;
+}
+button{
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px 4px;
+  border-radius: 8px;
+  border-style: none;
+  background-color: var(--Dark-cyan);
+}
+button span:nth-child(1){
+  display: inline-block;
+  width: 14px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: bottom;
+  background-image: url(./images/icon-cart.svg);
+}
+button span:nth-child(2){
+  font-size: var(--fs-p);
+  font-weight: var(--fw-button);
+  color: var(--White);
+}
+
+@media (min-width: 700px){
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 0.1fr;
+    border-radius: 8px;
+    box-shadow: 10px 10px 11px 1px rgba(0,0,0,0.14);
+  }
+  .mobile-image{
+    display: none;
+  }
+  .desktop-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+  }
+  .image--section{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+}
